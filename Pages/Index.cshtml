@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4 text-center">Welcome to Your Game List Project</h1>
+        <p class="lead text-center">This is a demonstration of an ASP.NET Core web application that uses a JSON data source to display a list of games. The project showcases the use of ASP.NET Core MVC, Razor Pages, and JSON Web API.</p>
+        <hr class="my-4">
+        <p>ASP.NET Core is a powerful and cross-platform framework for building modern web applications. In this project, we leverage the Model-View-Controller (MVC) design pattern to structure the application, providing clear separation of concerns between data, presentation, and logic.</p>
+        <p>Razor Pages, a part of ASP.NET Core MVC, allow us to create dynamic and data-driven web pages with the help of Razor syntax, which combines C# code seamlessly with HTML markup.</p>
+        <p>The application reads game data from a JSON file, which acts as a lightweight and easy-to-manage data source. The JSON data is then deserialized into a list of GameModel objects, representing each game's details.</p>
+        <p>These games are presented on the Game List page, which utilizes Bootstrap, a popular front-end framework, to create responsive and visually appealing game cards. Each card displays the game's title, platform, genre, and release date along with an associated cover image.</p>
+        <p>Tools/Software/Languages used in this project:</p>
+        <ul>
+            <li>Visual Studio 2022 Community Edition</li>
+            <li>ASP.NET Core</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JSON</li>
+        </ul>
+        <p class="lead text-center">
+            <a class="btn btn-primary btn-lg" href="/GameList" role="button">Explore the Game List</a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿@page
+@model Gameapp.Pages.GameListModel
+@{
+    ViewData["Title"] = "Game List";
+}
+<h1>Game List</h1>
+
+@if (Model.Games != null && Model.Games.Any())
+{
+    <div class="row">
+        @foreach (var game in Model.Games)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@game.ImageUrl" class="card-img-top" alt="@game.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@game.Title</h5>
+                        <p class="card-text"><strong>Platform:</strong> @game.Platform</p>
+                        <p class="card-text"><strong>Genre:</strong> @game.Genre</p>
+                        <p class="card-text"><strong>Release Date:</strong> @game.ReleaseDate</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No games found.</p>
+}
